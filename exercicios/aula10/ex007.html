@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando números</title>
+    <style>
+        html {
+            height: 100%;
+        }
+        body{
+            font: normal 18pt arial;
+            background: transparent linear-gradient(to bottom, rgb(94, 94, 184), rgb(152, 75, 75)) no-repeat;
+            background-size: cover;
+        }
+        main {
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.297);
+            background: rgb(34, 117, 122);
+            width: 500px;
+            height: 500px;
+            padding: 100px;
+            border-radius: 20%;
+            border: 1px solid black;
+
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+        #container {
+            position: relative;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+        input {
+            font: normal 18pt Arial;
+            width: 100px;
+            border-radius: 10%;
+            border: none;
+            box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.249);
+            text-align: center;
+        }
+        input[type="button"] {
+            color: white;
+            background-color: rgb(16, 10, 77);
+            width: fit-content;
+        }
+        
+    </style>
+</head>
+<body>
+    <main>
+        <div id="container">
+            <h1>Somando Valores</h1>
+            <input type="number" name="soman1" id="soman1"> +
+            <input type="number" name="soman2" id="soman2">
+            <input type="button" value="Somar" onclick="somar()">
+            <div id="res_soma">Resultado</div>
+            <h1>Subtraindo Valores</h1>
+            <input type="number" name="subn1" id="subn1"> -
+            <input type="number" name="subn2" id="subn2">
+            <input type="button" value ="Subtrair" onclick="subtrair()">
+            <div id="resSub">Resultado</div>
+            
+            <h1>Multiplicando Valores</h1>
+            <input type="number" name="multn1" id="multn1"> X
+            <input type="number" name="multn2" id="multn2">
+            <input type="button" value="Multiplicar" onclick="multiplicar()">
+            <div id="prod">Resultado</div>
+        </div>
+    </main>
+    <script>
+        function somar() {
+            var sn1 = document.getElementById('soman1');
+            var sn2 = document.querySelector('input#soman2');
+            var resSoma = document.getElementById('res_soma');
+
+            var n1 = Number(sn1.value);
+            var n2 = Number(sn2.value);
+
+            var s = n1 + n2;
+            resSoma.innerHTML = `A Soma entre ${n1} e ${n2} é: <strong>${s}</strong>`
+        }
+        function subtrair(){
+            var subn1 = document.getElementById('subn1');
+            var subn2 = document.getElementById('subn2');
+
+            var n1 = Number(subn1.value);
+            var n2 = Number(subn2.value);
+
+            var sub = n1 - n2;
+            resSub.innerHTML = `A subtração entre ${n1} e ${n2} é: ${sub}`;
+        }
+        function multiplicar() {
+            var multin1 = document.getElementById('multn1');
+            var multin2 = document.getElementById('multn2');
+
+            var n1 = Number(multin1.value);
+            var n2 = Number(multin2.value);
+
+            var produ = n1 * n2; 
+            prod.innerHTML = `O produto entre ${n1} e ${n2} é: ${produ}`;
+        }   
+        
+    </script>
+</body>
+</html>

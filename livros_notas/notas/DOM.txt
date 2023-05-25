@@ -1,0 +1,70 @@
+DOM é um acroma para Document Object Model. Basicamente, é um conjunto de objetos dentro do navegador que dá acesso aos componentes internos do site.
+
+ÁRVORE DOM
+
+Raiz - window : A janela do navegador é um objeto DOM, dentro dela existem vários outros objetos.
+
+location: Qual a localização do site na web, qual a página atual, qual foi a página anterior | document:  É o documento atual| history: De onde veio, pra onde vai. Entre outros 
+
+dentro do DOCUMENT
+
+DOCUMENT
+HTMl - Tem dois "filhos"
+head | body
+ABAIXO DELES EXISTEM TODAS AS TAGS HTML.
+
+SELECIONANDO ELEMENTOS DENTRO DA ÁRVORE DOM
+
+Existem vários métodos entre eles 
+
+OBS: DENTRO DO PARÊNTESES VAI O NOME DO ELEMENTO QUE SE DESEJA BUSCAR
+
+POR TAG
+getElementsByTagName()
+
+POR ID
+getElementById()
+
+POR Nome
+get.ElementsByName()
+
+POR CLASS
+get.ElementsByClassName()
+
+POR SELETOR
+querySelector(SELETOR CSS EX.: 'div#msg')
+querySelectorAll() -- Sendo o plural 
+
+EVENTOS DOM
+
+É qualquer evento que aconteça no documento, por exemplo os eventor de mouse.
+
+mouseenter : Quando o mouse entra em um elemento HTML
+
+mouseout : Quando o mouse sai de um elemento HTML.
+
+mousemove : Quando o mouse se move pelo elemento HTML
+
+mousedown : Quando clica e segura em baixo.
+
+mouseup : quando solta o click.
+
+click : ato de clicar
+
+
+FUNÇÃO
+
+É um conjunto de códigos (linhas) que vão ser executadas quando o evento ocorrer. 
+
+o conjunto de comandos de uma função é chamado de BLOCO. 
+
+os blocos não são executados automáticamente, eles só disparam quando um evento ocorre. 
+
+Para 10 linhas, por exemplo serem executadas, primeiro é preciso colocá-las dentro de um bloco. Um bloco em JS é delimitado por chaves '{}';  também é preciso nomear o bloco como uma FUNCTION, geralmente os nomes das funções são as ações de eventos. 
+
+function ação(param) {
+
+}
+
+
+

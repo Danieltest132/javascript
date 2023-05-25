@@ -1,0 +1,54 @@
+OPERADORES ARITMÉTICOS E DE ATRIBUIÇÃO
+
+= : recebe; 
++ : Soma;
+- : Subtração;
+* : Multiplicação;
+/ : Divisão;
+% : Resto da divisão inteira ou módulo;
+** : Exponenciação;
+
+Cuidado com o uso de operadores, pois existe a PRECEDÊNCIA DE OPERADORES (assim como na matermática {PEMDAS}).
+
+PRECEDÊNCIA DE OPERADORES ARITMÉTICOS JS: 
+()
+**
+*, /, % ----> Caso apareça mais de um desses no cálculo, será feito na ordem de leitura (esquerda para direita).
++, "-" ----> Caso apareça mais de um desses no cálculo, será feito na ordem de leitura (esquerda para direita).
+
+OPERADORES RELACIONAIS 
+
+> : Maior;
+< : Menor; 
+>= : Maior ou igual; 
+<= : Menor ou igual;
+== : igual;
+=== : mesmo valor e mesmo tipo;
+!= : Diferente; 
+!== : Desigual restrito;
+
+OPERADORES LÓGICOS 
+
+! : Negação (não); 
+&& : Conjunção (e);
+|| : Disjunção (ou);
+
+OBS: Esses operadores já estão na ordem de precedência.
+
+
+OPERADOR TERNÁRIO 
+
+Ele se chama ternário porque tem 3 partes, tem os blocos de teste, o bloco verdadeiro e o bloco falso. 
+
+teste ? true : false
+ex.: 
+<script>
+media >= 7 ? "aprovado" : "reprovado";
+</script>
+
+	-- ORDEM DE DE PRECEDÊNCIA
+
+		Aritméticos 
+		Relacionais (não têm precedência)
+		Lógicos
+		Ternário
