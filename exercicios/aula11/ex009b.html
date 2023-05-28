@@ -16,7 +16,12 @@
     
         function ver() {
             var nac = window.document.getElementById('inac');
-            iresp.innerText = ('Sua nacionalidade é: ' + nac)
+            iresp.innerHTML = `Sua nacionalidade é: ${nac.value}<br>`;
+            if (nac.value == 'Brasil' || nac.value == 'brasil' || nac.value == 'BRASIL'){
+                iresp.innerHTML += `Você é Brasileiro`;
+            }else{
+                iresp.innerHTML += `Você é estrangeiro`
+            }
         }
     </script>
 </body>
