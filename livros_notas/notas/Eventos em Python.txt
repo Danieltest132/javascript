@@ -1,0 +1,94 @@
+- ERROS EM UM PROGRAMA PYTHON 
+
+-- ERROS E EXCEÇÕES 
+
+Dois tipos básicos podem acontecer em um programa Python. Os erros de sintaxe são aqueles que ocorrem devido ao formato incorreto de uma instrução. Esses erros são descobertos pelo componente interpretador Python, que é chamado analisador ou parser. 
+
+Além deles, existem os erros que ocorrem em tempo de execução do programa, que não se devem a uma instrução escrita errada, e sim ao fato de que o programa entro em um estado indevido. 
+
+Ex.: 
+
+1. A divisão por 0. 
+
+2. A tentativa de acessar um índice indevido em uma lista. 
+
+3. Um nome de variável não atribuído. 
+
+4. Um erro causado por tipos incorretos de operando. 
+
+Em cada caso, quando o programa atinge um estado inválido, é dito que o interpretador Python levanta uma exceção. Isso significa que é criado um objeto que contém as informações relevantes sobre o erro.
+
+Em Python, as exceções são objetos. A classe Exception é derivada de BaseException, classe base de todas as classes de exceção. Base Exception fornece alguns serviços úteis para todas as classes de exceção, mas normalmente não se torna uma subclasse diretamente. 
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+- TRATAMENTO DE EXCEÇÕES E EVENTOS
+
+-- CAPTURA E MANIPULAÇÃO DE EXCEÇÕES
+
+Para evitar que os programas sejam interrompidos quando uma exceção é levantada, é possível planejar um comportamento alternativo. Assim, o programa não será interrompido e a exceção poderá ser tratada. Chamamos esse processo de captura de exceção.
+
+Uma forma de fazer a captura e a manuipulação de exceções é usar o par de instruções try/except. 
+
+--- BLOCO TRY
+
+O bloco try é executado primeiro. Devem ser inseridas nele as instruções do fluxo normal do programa 
+
+--- BLOCO EXCEPT 
+
+O bloco except só será executado se houver o levantamento de alguma exceção
+
+Isso permite que o fluxo de execução continue de maneira alternativa. 
+
+O formato padrão de uso do par try/except é: 
+
+try: 
+	bloco1 
+except: 
+	bloco2
+Instrução fora do try/except
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+-- CAPTURA DE EXCEÇÕES DE DETERMINADO TIPO 
+
+Python permite que o bloco relativo ao except só seja executado caso a exceção levantada seja de determinado tipo. Para isso o except precisa trazer o tipo de execução que se deseja capturar.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+-- CAPTURA DE EXCEÇÕES DE MÚLTIPLOS TIPOS 
+
+Python permite que haja diversos tratamentos para diferentes tipos possíveis de exceção. Isso pode ser feito com mais de uma cláusula except vinculada a mesma cláusula try. 
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+-- TRATAMENTO COMPLETO DAS EXCEÇÕES 
+
+A forma geral completa para lidar com as exceções em Python é: 
+
+try: 
+	Bloco 1
+
+except Exeption1: 
+	Bloco tratador para Exception1
+
+except Exception2: 
+	Bloco tratador para Exception2
+...
+
+else: 
+	Bloco 2 - executado caso nenhuma exceção seja levantada
+
+finally: 
+	Bloco 3 - executado independente do que ocorrer
+Instrução fora do try/except
+
+As cláusulas else e finally são opcionais. 
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+-- TRATAMENTO DE EVENTOS 
+
+O tratamento de eventos é similar ao de exceções. Assim como no caso das exceções ocorridas em tempo de execução, podemos tratar os eventos criados por ações externas, como as interações de usuário realizadas por meio de uma interface gráfica de usuário (GUI). 
+
+	Um evento é a notificação de que alguma coisa aconteceu, como um clique de mouse sobre um elemento botão. O tratador do evento é o segmento de código que será executado em resposta à ocorrência do evento.
