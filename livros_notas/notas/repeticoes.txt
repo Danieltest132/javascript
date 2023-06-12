@@ -1,0 +1,44 @@
+As estruturas de repetições também podem ser chamadas de laços ou iterações.
+
+Um laço começa testando uma expressão.
+
+Caso a expressão testada seja verdadeira , ele tem a capacidade de voltar a executar o bloco enquanto for verdadeiro. 
+
+Sua estrutura é: 
+
+while (condição) {
+	bloco
+}
+
+o while é chamado de estrutura de repetição com teste lógico no início. Isso porque, ele faz o teste e caso seja verdadeiro, executa o bloco. 
+
+Também é possivel usar a lógica contrária, primeiro executar o bloco e depois fazer o teste. Com o laço do-while
+
+estrutura 
+
+do {
+
+	bloco1 
+
+}while (condição)
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+ESTRUTURA DE REPETIÇÃO COM VARIÁVEL DE CONTROLE
+
+Basicamente é feito três coisas inicialmente nessa estrutura: inicialização, teste lógico e incremento.
+
+Na primeira passagem essa estrutura faz a inicialização e o teste lógico, sendo esse teste verdadeiro, é executado o bloco. feito o bloco ele volta ao início e faz o incremento. até o teste lógico for falso. 
+
+ESTRUTURA 
+
+for (inicio ; teste ; incr) {
+	bloco
+}
+
+
+
+
+
+
+
