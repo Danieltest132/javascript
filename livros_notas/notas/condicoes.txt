@@ -1,0 +1,26 @@
+Condição múltipla
+
+Serve para valores fixos, e não para intervalos de números. 
+
+Essa condição tem mais possibilidades ao invés de sim e não, ela trabalha com outros valores. 
+
+-- Estrutura da condição:
+
+switch(expressão) {
+	case valor 1:
+	
+
+	break
+	case valor 2:
+
+	break
+	case valor 3:
+	
+	break
+	defaut:
+	
+	break
+}
+
+OBS: O DEFAULT funciona como o else da estrutra else if, sendo opcional. O BREAK ao final é obrigatório.
+
