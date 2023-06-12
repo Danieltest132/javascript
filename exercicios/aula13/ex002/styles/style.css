@@ -16,6 +16,13 @@ section {
     width: 500px;
     margin: auto;
 }
+img {
+    margin: 25px;
+}
+div {
+    padding: 5px;
+    margin: auto;
+}
 footer {
     color: white;
     font-style: italic;
