@@ -1,0 +1,92 @@
+VARIÁVEL COMPOSTA:
+
+Variáveis simples só conseguem armazenar UM VALOR por vez.
+
+VARIÁVEIS COMPOSTAS - Devem ser capazes de armazenar vários valores em uma mesma estrutura. 
+
+
+Uma variável composta, também é chamada de array ou vetor. Ou seja uma variável com vários espaços. Um vetor é composto de elementos.
+
+um elemento de um vetor é um par que agrupa um par que agrupa o espaço que ele ocupa na memória, o valor colocado dentro delee o índice. 
+
+índice, ou chave é a posição de um elemento dentro de um array, começando no JS por 0. 
+
+estrutura exemplificada 
+
+let num = [5, 8, 4]
+
+No exemplo acima o array tem 3 elementos, com os índices 0, 1 e 2. Com valores respectivamente de 5, 8, 4. 
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Para acrescentar um valor a um array é simples :
+
+ex: 
+num[3] = 6
+
+estrutura: array_name[key] = value/string
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Para acrescentar um valor como último elemento do array, seja ele qual for: 
+
+num.push(7)
+
+Nesse caso, seria acrescentado o valor 7 como último elemento do array. 
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Para consultar o comprimento de um array: 
+
+num.length
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Para ordenar os vetores em ordem crescente (sendo 'num' o nome do array): 
+
+num.sort()
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Para chamar um elemento de uma posição especifica (sendo 'num' o nome do array):
+num[posição]
+
+ex: 
+
+console.log(num[0]) 
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Para mostrar na tela sem a formatação padrão de forma prática:
+
+Para um array de nome num 
+
+VERSÃO PADRÃO DE PERCURSO EM VETORES: 
+
+for ( let pos = 0; pos < num.length; pos++ ){
+	console.log(num[pos])
+}	
+ 
+
+VERSÃO MAIS ATUAL DO ECMA SCRIPT: 
+Sendo num o nome do array
+Sendo pos o key do elemento
+
+Essa sintaxe do for, só funciona para arrays e objetos. Que são a mesma coisa, pois todo array é um object
+
+for ( let pos in num ){
+	console.log(num[pos])
+}
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Para buscar valores dentro de um vetor: 
+para um array
+
+let num = [4, 5, 6, 7, 8]
+
+num.indexOf(7) --> Essa função retorna o numero 3 que é a posição do valor 7 dentro do array
+
+num.indexOf(3) --> Essa função retorna -1, o que significa que não existe dentro do vetor o valor 3
+ 
