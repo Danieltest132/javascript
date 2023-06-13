@@ -1,0 +1,31 @@
+Toda função pode ter os seguintes fatores: 
+
+Uma chamada
+
+Um conjunto de parâmetros
+
+Uma ação 
+
+Um retorno
+
+Nem toda função tem um conjuto de parâmetros e nem toda função tem retornos. 
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+PARA  PROGRAMAÇÃO:
+
+-- Funções são ações executadas assim que são chamadas ou em decorrência de um evento.
+
+-- Uma função pode receber parâmetros e retornar um resultado. 
+
+ 
+
+estrutura: 
+
+function ação(param){
+	
+
+	return res
+}
+
+ação(5) --> Chamada
