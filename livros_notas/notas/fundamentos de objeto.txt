@@ -1,0 +1,3 @@
+Para declarar um objeto é como atribuir um array, com a diferrença de colocar chaves no lugar de colchetes
+
+let amigo = {nome: 'José', sexo:'M', peso: 85.4, engordar(p){}}
